@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @stanleenwosu
+- 👋 Hi, I’m Stan
 - 👀 I’m interested in building Enterprise and Indie Applications
 - 🌱 I’m currently learning Web3 and Crypto
 - 💞️ I’m looking to collaborate on Projects
