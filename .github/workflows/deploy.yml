@@ -6,7 +6,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [stanlee_nm-main] # deploy whenever main updates
+    branches: [main] # deploy whenever main updates
   workflow_dispatch: # ...and let you trigger it manually
 
 # Grant the workflow permission to publish Pages
