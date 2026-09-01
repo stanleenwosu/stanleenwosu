@@ -80,16 +80,20 @@ export const ProjectsSection: React.FC = () => {
                     {project.description}
                   </p>
 
-                  {/* Technology Tags */}
-                  <div className="flex flex-wrap gap-2 mb-8">
-                    {project.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="font-label-minimal text-[9px] uppercase tracking-[0.2em] text-[var(--text-secondary)] border border-[var(--border-hairline)] px-2.5 py-1 bg-[var(--surface-subtle)]"
-                      >
-                        {tag}
-                      </span>
-                    ))}
+                  <div className="mb-8">
+                    <div className="font-label-minimal text-[9px] uppercase tracking-[0.2em] text-[var(--text-muted)] mb-2.5">
+                      {ui.projectsSection.techStack}
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {project.techStack.map((tech) => (
+                        <span
+                          key={tech}
+                          className="font-label-minimal text-[9px] uppercase tracking-[0.2em] text-[var(--text-secondary)] border border-[var(--border-hairline)] px-2.5 py-1 bg-[var(--surface-subtle)]"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
 

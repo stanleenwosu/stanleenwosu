@@ -150,12 +150,12 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
             {ui.projectModal.verifiedStack}
           </div>
           <div className="flex flex-wrap gap-2">
-            {project.tags.map((tag) => (
+            {project.techStack.map((tech) => (
               <span
-                key={tag}
+                key={tech}
                 className="font-label-minimal text-[10px] text-[var(--text-secondary)] border border-[var(--border-hairline)] px-3 py-1 bg-[var(--surface-subtle)]"
               >
-                {tag}
+                {tech}
               </span>
             ))}
           </div>

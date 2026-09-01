@@ -14,6 +14,7 @@ export interface Project {
     change?: string;
   }[];
   tags: string[];
+  techStack: string[];
   image: string;
   imageAlt: string;
   codeSnippet: string;

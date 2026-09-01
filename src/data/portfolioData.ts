@@ -45,6 +45,7 @@ export const PROJECTS: Project[] = [
       { label: 'Uptime Reliability', value: '99.98%', change: 'Zero dropped transactions' }
     ],
     tags: ['NEXT.JS', 'TYPESCRIPT', 'NODE.JS', 'POSTGRESQL', 'REDIS', 'STRIPE'],
+    techStack: ['Next.js', 'TypeScript', 'Node.js', 'PostgreSQL', 'Redis', 'Stripe'],
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA8ekSgzcdfnyZlK3hvSunEpCTgJa_-v8kx7hQ8MhyFPI407gctA4fljJo9THK9_mKTPi604yRhWNK7DjBLObwtH62edXMULR3S7uFikBVvrXanBvHeyog329PT1dXNvsT3OVGBIMxpXKPj_XUZCrLpHRngF30BiGUTeZa6VzJ77Bk-qjJUTRJEScHgk3vxo045nfn80R6LmWBGgIkjxT2N_XkCHZzlyxoplCCDusK-Xwqufti4yEo',
     imageAlt: 'Monochrome high-contrast technical dashboard interface for ecommerce analytics.',
     codeLanguage: 'typescript',
@@ -104,6 +105,7 @@ export async function processOrderCheckout(
       { label: 'Offline Sync Accuracy', value: '100%', change: 'Zero state corruption' }
     ],
     tags: ['REACT', 'TYPESCRIPT', 'WEBSOCKETS', 'NODE.JS', 'REDIS', 'DOCKER'],
+    techStack: ['React', 'TypeScript', 'WebSockets', 'Node.js', 'Redis', 'Docker'],
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDsAJfXxr10uf32uJ385QmaYql-1gH4n6TAvO42Vnx4D13LCwAOVxXt6EWbwQjq5PXsZt0xJvgoXaiaACDOmggekPjs1MfTdAj92O8X5ceI-L5yB1SbexUCzDGeItCQ53lN3E77VlCbpB8bmnUPesAdFPkhckuTlltl0n4teIA1wstqn9ZS_ViSRykWNok5MIm0t3cvIo0ok6a2MhLPV8wcK3AqnJ6E1jbhSe5L2xISICkkXicR9fU',
     imageAlt: 'Monochromatic conceptual visualization of connected collaborative data streams.',
     codeLanguage: 'typescript',
@@ -151,6 +153,7 @@ export class DocumentRoomManager {
       { label: 'Security Verification', value: '100%', change: 'Strict schema enforcement' }
     ],
     tags: ['PYTHON', 'FASTAPI', 'REACT', 'GRAPHQL', 'DOCKER', 'AWS'],
+    techStack: ['Python', 'FastAPI', 'React', 'GraphQL', 'Docker', 'AWS'],
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAI_4N4B6DrUPEtPxjvRTLELMwb7Et7h3TlbSbv_FFkLzo6kk4oDQy5tJn-z2AB-jDHuJx7zgGa5x5BwFsZc97tKzLkudnKMkedBG7l0fl6N_jDtC0LfniNYGlnlGg6jHeZ0dKmmqhVZ9EwFf4Api-G0TkJqo9PE-3boWoNIvUTDDPnaAleeGLAuONNUiguquFaL1rrQw7-94wVHhb87BktXju2gQCHVxLx4Je7_QTRwQ4EcnUgmoc',
     imageAlt: 'Minimal monochrome render of networked systems and microservice topologies.',
     codeLanguage: 'typescript',
@@ -203,6 +206,7 @@ export async function authenticateAndProxy(
       { label: 'Bundle Impact', value: '0.9 KB avg', change: 'Fully tree-shakeable' }
     ],
     tags: ['TYPESCRIPT', 'REACT', 'TAILWIND CSS', 'STORYBOOK', 'TURBOREPO'],
+    techStack: ['TypeScript', 'React', 'Tailwind CSS', 'Storybook', 'Turborepo'],
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC7sx7jWkSG38vsTPQB0p1h0MPMAHD_fVJKdQhmHF_-weJkWtVg7F10iXvsN3JFHvBkRwmhA7qjrzNJJS8XUcuyL9IPYf7Z55PWO1TqbV5qRvIXaq95Z2SLKcdNVOsJyCjtJlOmFLm-TiPg5tPQd6l3GPylKG23jkM2-spBy1WsKe0sAjPV7m-2jOQnFHliZA823PgrNhbcnGYQyQ0sSBBtFFGF2-UNvknN6_ny1npY9JjMLHOC0No',
     imageAlt: 'Monochrome technical design grid showcasing modular design system components.',
     codeLanguage: 'typescript',
