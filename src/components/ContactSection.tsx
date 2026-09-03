@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Code, Briefcase, Mail, CheckCircle, ArrowRight, Loader2 } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 import { ContactFormData } from '../types';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -23,7 +24,7 @@ export const ContactSection: React.FC = () => {
     if (errorMsg) setErrorMsg('');
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
       setErrorMsg('Please complete all required fields prior to transmission.');
@@ -31,10 +32,23 @@ export const ContactSection: React.FC = () => {
     }
 
     setSubmitting(true);
-    setTimeout(() => {
-      setSubmitting(false);
+    try {
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
       setSubmitted(true);
-    }, 800);
+    } catch {
+      setErrorMsg('Failed to send message. Please try again.');
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const handleReset = () => {
