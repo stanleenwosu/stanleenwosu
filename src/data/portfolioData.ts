@@ -232,47 +232,65 @@ export const Button = React.forwardRef(
 export const EXPERIENCES: ExperienceItem[] = [
   {
     id: 'exp-1',
-    period: '2022 — PRESENT',
-    role: 'Senior Fullstack Software Developer',
-    company: 'Nexus Cloud Labs',
-    location: 'San Francisco, CA / Remote',
-    description: 'Leading fullstack architecture and development for enterprise SaaS platforms. Designing distributed Node.js/TypeScript microservices, modern React/Next.js client applications, and scalable PostgreSQL database schemas.',
+    period: 'MAY 2022 — PRESENT',
+    role: 'Frontend Developer (Angular)',
+    company: 'Evolutics Technology',
+    location: 'Lagos, Nigeria / Remote',
+    description: 'Building responsive, accessible insurance platforms in Angular for top insurers and government clients, architecting feature modules with lazy loading and OnPush change detection for data-heavy policy, claims, and underwriting workflows.',
     bullets: [
-      'Architected end-to-end web platforms handling over 10M monthly active user interactions with 99.99% system availability.',
-      'Constructed a shared internal React component library, accelerating feature delivery velocity across 5 product teams by 35%.',
-      'Optimized backend API pipelines and database indexes, slashing p95 latency from 380ms to 65ms.',
-      'Implemented automated CI/CD deployment pipelines using GitHub Actions, Docker, and AWS ECS.'
+      'Architected feature modules with lazy loading and OnPush change detection, trimming initial bundle size by 35–45% and load time to under 2s.',
+      'Engineered complex reactive UIs using Signals, RxJS observables, and NgRx for centralized state management across 50+ views.',
+      'Co-developed reusable in-house npm packages and shared Angular component libraries adopted across 9+ internal projects.',
+      'Translated UI/UX designs into pixel-perfect components with Angular Material and a custom design system meeting WCAG AA standards.',
+      'Optimized runtime and rendering performance via AOT compilation, trackBy, pure pipes, and subscription leak fixes, improving Lighthouse scores by 30%.',
+      'Ensured reliability through unit and component testing (Jasmine/Karma) at 75–85% coverage, cutting production defects by 30–40%.'
     ],
-    techStack: ['TypeScript', 'React', 'Next.js', 'Node.js', 'PostgreSQL', 'Redis', 'Docker', 'AWS']
+    techStack: ['Angular', 'TypeScript', 'RxJS', 'NgRx', 'Angular Material', 'Jasmine', 'Karma']
   },
   {
     id: 'exp-2',
-    period: '2019 — 2022',
-    role: 'Fullstack Software Engineer',
-    company: 'Veloce Digital Systems',
-    location: 'Austin, TX / Hybrid',
-    description: 'Engineered high-performance web applications, customer portals, and RESTful/GraphQL backend services. Spearheaded frontend state management migrations and backend microservice integrations.',
+    period: 'SEP 2024 — DEC 2025',
+    role: 'Backend Developer',
+    company: 'My NEO Group',
+    location: 'Dubai, UAE / Remote',
+    description: 'Architected and built backend services in Node.js and Express powering crypto wallet operations, transaction processing, and account management for over 10k users at 99% uptime under production financial load.',
     bullets: [
-      'Built reactive, accessible single-page applications using React, TypeScript, and Tailwind CSS.',
-      'Engineered scalable REST and GraphQL API services utilizing Node.js/Express and Python FastAPI.',
-      'Integrated payment gateways (Stripe), authentication providers (OAuth, JWT), and third-party webhook ingestors.',
-      'Established unit and end-to-end testing standards using Jest and Playwright, achieving 92% automated code coverage.'
+      'Designed and versioned RESTful APIs consumed by internal teams, client apps, and third-party white-labelled applications, cutting partner integration time from 2 weeks to 2 days.',
+      'Optimized system performance by profiling slow queries and introducing a Redis caching layer, reducing p95 API latency from 2000ms to 800ms and cutting database load by 90%.',
+      'Built observability and logging analysis with Datadog, instrumenting services with structured logs, custom metrics, and distributed traces.',
+      'Partnered with product, security, and compliance teams to translate regulatory requirements into technical specs, contributing to SOC 2 audit milestones and reducing data-integrity incidents by 95%.'
     ],
-    techStack: ['React', 'TypeScript', 'Node.js', 'Python', 'FastAPI', 'GraphQL', 'PostgreSQL', 'Stripe']
+    techStack: ['Node.js', 'Express', 'Redis', 'Datadog', 'REST APIs', 'PostgreSQL']
   },
   {
     id: 'exp-3',
-    period: '2017 — 2019',
-    role: 'Fullstack Web Developer',
-    company: 'ByteCraft Interactive',
-    location: 'Remote',
-    description: 'Developed and shipped modern fullstack web products for high-growth startups. Specialized in translating Figma designs into responsive, production-ready frontend interfaces coupled with robust backend APIs.',
+    period: 'APRIL 2023',
+    role: 'Software Developer (Contract)',
+    company: 'GetZelling',
+    location: 'Miami, USA / Remote',
+    description: 'Built a feature-rich admin dashboard in Angular and a cross-platform React Native mobile app for real estate agents and clients, with real-time data synchronization and serverless cloud architecture on GCP.',
     bullets: [
-      'Migrated legacy monolithic web applications into decoupled React and Node.js REST API stacks.',
-      'Designed relational database models in PostgreSQL and MongoDB with efficient indexing and caching strategies.',
-      'Implemented responsive, mobile-first interfaces adhering strictly to modern design systems and SEO best practices.'
+      'Built a feature-rich admin dashboard in Angular for outside agents with real-time property management, live listing status, and inventory updates.',
+      'Built a cross-platform React Native mobile app serving both in-house agents and clients across iOS and Android.',
+      'Designed the cloud architecture on GCP, connecting Cloud Functions, Firestore, and Cloud Storage into a serverless system.',
+      'Implemented CI/CD pipelines automating build, test, and deployment, cutting release time from 30 mins to ~3 mins.'
     ],
-    techStack: ['JavaScript (ES6+)', 'React', 'Node.js', 'Express', 'MongoDB', 'PostgreSQL', 'Tailwind CSS']
+    techStack: ['Angular', 'React Native', 'Node.js', 'Firebase', 'Firestore', 'GCP', 'Cloud Functions']
+  },
+  {
+    id: 'exp-4',
+    period: 'FEB 2020 — APRIL 2022',
+    role: 'Junior Software Developer',
+    company: 'Briccs International Ideal Limited',
+    location: 'Lagos, Nigeria',
+    description: 'Contributed to telecom integrations, school management platforms, and custom CMS solutions, growing from small tickets to owning full modules.',
+    bullets: [
+      'Contributed to integrations with Nigeria\'s major telecom providers (MTN, Glo, Airtel, 9mobile) for SMS/USSD/airtime/data/payment APIs.',
+      'Helped build a school management platform with features for student records, attendance, grading, and fee management.',
+      'Developed features for custom Content Management Systems used by clients to manage and publish their own content.',
+      'Collaborated with teammates and stakeholders, steadily taking on more responsibility as skills grew.'
+    ],
+    techStack: ['JavaScript', 'Node.js', 'HTML/CSS', 'REST APIs']
   }
 ];
 

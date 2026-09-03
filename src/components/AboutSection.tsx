@@ -26,14 +26,16 @@ export const AboutSection: React.FC = () => {
             </div>
           </div>
 
-          <button
+          <a
             id="download-resume-btn"
-            onClick={() => setResumeOpen(true)}
+            href="https://drive.google.com/uc?export=download&id=1jh-YH9uS7EnaFG-1vLtraJ10O5qiyOmX"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-between w-full border border-[var(--border-hairline)] bg-[var(--surface-card)] px-6 py-4 text-[var(--text-primary)] hover:bg-[var(--surface-hover)] transition-all duration-200 font-label-minimal text-[10px] uppercase tracking-[0.25em] group cursor-pointer shadow-2xs"
           >
             <span>{ui.aboutSection.cvButton}</span>
             <Download className="w-4 h-4 text-[var(--text-secondary)] group-hover:translate-y-0.5 transition-transform" />
-          </button>
+          </a>
         </div>
 
         {/* Right Column: Bio & Experience Timeline */}
