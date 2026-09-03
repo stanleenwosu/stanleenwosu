@@ -3,6 +3,7 @@ import { Project, ExperienceItem, SkillCategory } from "../types";
 const wedlyImage = new URL("../../assets/wedly.png", import.meta.url).href;
 const oringoImage = new URL("../../assets/oringo.png", import.meta.url).href;
 const slipsenseImage = new URL("../../assets/slipsense.png", import.meta.url).href;
+const profileImage = new URL("../../assets/avatar.jpeg", import.meta.url).href;
 
 export type Language = "en" | "de";
 
@@ -153,17 +154,16 @@ export interface LocalizedContent {
 export const TRANSLATIONS: Record<Language, LocalizedContent> = {
   en: {
     profile: {
-      name: "Stanlee Nwosu",
+      name: "Stanley Nwosu",
       brandName: "STANLEE_NM",
       title: "FULLSTACK SOFTWARE DEVELOPER",
       tagline:
         "Designing and engineering scalable fullstack web applications, resilient backend architectures, and high-performance user experiences across the modern cloud ecosystem.",
       bioParagraphs: [
-        "I am a fullstack software developer dedicated to engineering end-to-end digital solutions that bridge robust backend systems with responsive, accessible user interfaces. I work across the entire product lifecycle—from relational data modeling and REST/GraphQL API architecture to reactive frontend state orchestration and automated cloud deployments.",
-        "With deep proficiencies in TypeScript, React, Next.js, Node.js, Python, and cloud infrastructure, I emphasize clean architectural patterns, comprehensive automated test suites, and sub-second load times. Whether crafting modular micro-frontends or engineering high-throughput backend services, I build software that delivers deterministic reliability at scale.",
+        "I am a fullstack software developer dedicated to engineering end-to-end digital solutions that bridge robust backend systems with responsive, accessible user interfaces. I work across the entire product lifecycle—from relational data modeling and REST API architecture to reactive frontend state orchestration and automated cloud deployments.",
+        "With deep proficiencies in TypeScript, Angular, React, Next.js, Node.js, Python, and cloud infrastructure, I emphasize clean architectural patterns, comprehensive automated test suites, and sub-second load times. Whether crafting modular micro-frontends or engineering high-throughput backend services, I build software that delivers deterministic reliability at scale.",
       ],
-      portraitUrl:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuBpdjKs84GFCyKEQ2g7sqctnMDE4I_rurRNghAOPxSYf9_ZgLyp6u1unado3O4JRqWXNYOLsqdNMzRcaymOAyVs9E-YwrX1wvSEbspj8Uv0Pf5M2Xlbjd0OvEhi-ku-6AWqCiUCfUxFzGSzNQLzveHKY8M5xC296bFf49pcjIA20SBlk-E6INISxZ278Oh5-14iIA5Lyi6rNML7XTx7Ca538OprI84x3vKyQlCChAKfRHPIntgyWUg",
+      portraitUrl: profileImage,
       portraitAlt: "High-contrast monochrome studio portrait of Stanlee Nwosu, fullstack software developer.",
       socials: {
         github: "https://github.com/stanleenwosu",
@@ -281,70 +281,70 @@ export const marketplaceModes = {
 } as const;`,
         demoUrl: "https://www.oringo.app/",
       },
-      {
-        id: "slipsense-betslip-analysis",
-        title: "SLIPSENSE BETSLIP ANALYSIS",
-        subtitle: "Sport Betting Analysis, Probability & Better Plays",
-        description:
-          "A data-backed betslip analysis tool that turns bookmaker codes into leg-by-leg context, risk signals, and smarter play suggestions.",
-        longDescription:
-          "SlipSense accepts booking codes from SportyBet, Afropari, MelBet, and 1xBet, then breaks each selection into win probability, recent form, head-to-head context, and risk. The result highlights the weakest leg and offers better-play suggestions, while keeping estimates informational rather than presenting them as guaranteed betting advice.",
-        architectureBreakdown: [
-          {
-            title: "Booking Code Intake",
-            description:
-              "Users paste a booking or share code from a supported bookmaker without uploading screenshots or retyping selections.",
-          },
-          {
-            title: "Per-Leg Analysis",
-            description:
-              "Each fixture receives probability, recent form, head-to-head, BTTS, and Over 2.5 context in a focused breakdown.",
-          },
-          {
-            title: "Risk and Rebuild Guidance",
-            description:
-              "The slip overview calls out weaker legs and can suggest alternate markets with estimated odds when a selection looks soft.",
-          },
-        ],
-        metrics: [
-          {
-            label: "Supported Inputs",
-            value: "4 bookmakers",
-            change: "SportyBet, Afropari, MelBet, 1xBet",
-          },
-          {
-            label: "Analysis View",
-            value: "Per-leg context",
-            change: "Probability, form, and H2H",
-          },
-          {
-            label: "Usage Model",
-            value: "Token-based",
-            change: "Free allowance to start",
-          },
-        ],
-        tags: ["BETSLIP ANALYSIS", "SPORTS DATA", "PROBABILITY", "FORM & H2H", "RESPONSIBLE DESIGN"],
-        techStack: [
-          "Next.js",
-          "React",
-          "Tailwind CSS",
-          "Python",
-          "FastAPI",
-          "PostgreSQL",
-          "Claude",
-          "Render",
-        ],
-        image: slipsenseImage,
-        imageAlt: "Football match scene representing sports betting analysis.",
-        codeLanguage: "typescript",
-        codeSnippet: `// SlipSense analysis summary
-export const slipAnalysis = {
-  inputs: ["SportyBet", "Afropari", "MelBet", "1xBet"],
-  signals: ["Win probability", "Recent form", "Head-to-head"],
-  output: ["Slip score", "Weakest leg", "Better play"],
-} as const;`,
-        demoUrl: "https://slipsense-frontend.onrender.com/",
-      },
+      //       {
+      //         id: "slipsense-betslip-analysis",
+      //         title: "SLIPSENSE BETSLIP ANALYSIS",
+      //         subtitle: "Sport Betting Analysis, Probability & Better Plays",
+      //         description:
+      //           "A data-backed betslip analysis tool that turns bookmaker codes into leg-by-leg context, risk signals, and smarter play suggestions.",
+      //         longDescription:
+      //           "SlipSense accepts booking codes from SportyBet, Afropari, MelBet, and 1xBet, then breaks each selection into win probability, recent form, head-to-head context, and risk. The result highlights the weakest leg and offers better-play suggestions, while keeping estimates informational rather than presenting them as guaranteed betting advice.",
+      //         architectureBreakdown: [
+      //           {
+      //             title: "Booking Code Intake",
+      //             description:
+      //               "Users paste a booking or share code from a supported bookmaker without uploading screenshots or retyping selections.",
+      //           },
+      //           {
+      //             title: "Per-Leg Analysis",
+      //             description:
+      //               "Each fixture receives probability, recent form, head-to-head, BTTS, and Over 2.5 context in a focused breakdown.",
+      //           },
+      //           {
+      //             title: "Risk and Rebuild Guidance",
+      //             description:
+      //               "The slip overview calls out weaker legs and can suggest alternate markets with estimated odds when a selection looks soft.",
+      //           },
+      //         ],
+      //         metrics: [
+      //           {
+      //             label: "Supported Inputs",
+      //             value: "4 bookmakers",
+      //             change: "SportyBet, Afropari, MelBet, 1xBet",
+      //           },
+      //           {
+      //             label: "Analysis View",
+      //             value: "Per-leg context",
+      //             change: "Probability, form, and H2H",
+      //           },
+      //           {
+      //             label: "Usage Model",
+      //             value: "Token-based",
+      //             change: "Free allowance to start",
+      //           },
+      //         ],
+      //         tags: ["BETSLIP ANALYSIS", "SPORTS DATA", "PROBABILITY", "FORM & H2H", "RESPONSIBLE DESIGN"],
+      //         techStack: [
+      //           "Next.js",
+      //           "React",
+      //           "Tailwind CSS",
+      //           "Python",
+      //           "FastAPI",
+      //           "PostgreSQL",
+      //           "Claude",
+      //           "Render",
+      //         ],
+      //         image: slipsenseImage,
+      //         imageAlt: "Football match scene representing sports betting analysis.",
+      //         codeLanguage: "typescript",
+      //         codeSnippet: `// SlipSense analysis summary
+      // export const slipAnalysis = {
+      //   inputs: ["SportyBet", "Afropari", "MelBet", "1xBet"],
+      //   signals: ["Win probability", "Recent form", "Head-to-head"],
+      //   output: ["Slip score", "Weakest leg", "Better play"],
+      // } as const;`,
+      //         demoUrl: "https://slipsense-frontend.onrender.com/",
+      //       },
     ],
     experiences: [
       {
@@ -503,20 +503,20 @@ export const slipAnalysis = {
     ],
     ui: {
       nav: {
-        studio: "Studio",
+        studio: "Home",
         projects: "Projects",
         about: "About",
         skills: "Skills",
-        timeline: "Timeline",
+        timeline: "Experience",
         inquiry: "Get in Touch",
       },
       hero: {
         badge: "STANLEE_NM // FULLSTACK SOFTWARE ENGINEERING",
         headlineFirst: "Fullstack",
-        headlineSecond: "Craftsmanship",
+        headlineSecond: "Software Development",
         viewProjects: "Explore Projects",
         getInTouch: "Get In Touch",
-        featuredBadge: "FEATURED WORK 01 // PRODUCTION ARCHITECTURE",
+        featuredBadge: "FEATURED WORK 01 // CURATED MARKETPLACE",
         featuredSubtitle: "Next.js 14 // Node.js // PostgreSQL // Stripe",
         pillar1Title: "01 / Full-Stack Precision",
         pillar1Desc:
@@ -654,238 +654,6 @@ export const slipAnalysis = {
     },
     projects: [
       {
-        id: "fullstack-commerce-platform",
-        title: "ENTERPRISE E-COMMERCE ENGINE",
-        subtitle: "Next.js 14, Node.js API Gateway & Stripe-Infrastruktur",
-        description:
-          "Hochvolumige Fullstack-E-Commerce-Plattform mit SSR-Katalog-Caching, Echtzeit-Bestandsverwaltung, idempotenten Stripe-Webhooks und administrativem Metrik-Dashboard.",
-        longDescription:
-          "Entwicklung einer End-to-End Handelsplattform für über 80.000 Artikelnummern mit Spitzenlast-Resilienz bei Flash-Sales. Implementierung optimistischer Warenkorb-Synchronisation in React 18, entkoppelter Node.js-Microservices für die Bestellabwicklung und automatisierter PostgreSQL Read-Replicas mit Redis-Caching für API-Antwortzeiten unter 100 ms.",
-        architectureBreakdown: [
-          {
-            title: "Fullstack Next.js SSR & React Hydration",
-            description:
-              "Server Components mit inkrementeller statischer Regeneration (ISR) kombiniert mit clientseitigem State-Caching für sofortige Checkout-Übergänge.",
-          },
-          {
-            title: "Node.js & Express / Nest Microservices",
-            description:
-              "Idempotente Webhook-Warteschlangen, automatische Bestandsabbuchungen und transaktionale Versandpipelines.",
-          },
-          {
-            title: "PostgreSQL & Redis Datenlayer",
-            description:
-              "Optimiertes relationales Schema mit Fremdschlüsseln, Connection Pooling via PgBouncer und Sub-Millisekunden-Sitzungscaching.",
-          },
-        ],
-        metrics: [
-          { label: "API-Antwortzeit", value: "42ms", change: "< 100ms p95 global" },
-          { label: "Checkout-Konversion", value: "+34%", change: "Optimierter 1-Klick-Ablauf" },
-          { label: "Systemverfügbarkeit", value: "99,98%", change: "Keine Transaktionsverluste" },
-        ],
-        tags: ["NEXT.JS", "TYPESCRIPT", "NODE.JS", "POSTGRESQL", "REDIS", "STRIPE"],
-        techStack: ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Redis", "Stripe"],
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8ekSgzcdfnyZlK3hvSunEpCTgJa_-v8kx7hQ8MhyFPI407gctA4fljJo9THK9_mKTPi604yRhWNK7DjBLObwtH62edXMULR3S7uFikBVvrXanBvHeyog329PT1dXNvsT3OVGBIMxpXKPj_XUZCrLpHRngF30BiGUTeZa6VzJ77Bk-qjJUTRJEScHgk3vxo045nfn80R6LmWBGgIkjxT2N_XkCHZzlyxoplCCDusK-Xwqufti4yEo",
-        imageAlt: "Monochromes technisches Dashboard für E-Commerce-Analysen.",
-        codeLanguage: "typescript",
-        codeSnippet: `// Fullstack Order Transaction & Idempotency Pipeline
-export async function processOrderCheckout(
-  req: CheckoutRequest,
-  db: DatabaseClient
-): Promise<CheckoutResult> {
-  return await db.transaction(async (tx) => {
-    // 1. Idempotenz-Schlüssel im Redis-Cache prüfen
-    const isProcessed = await redis.set(\`idemp:\${req.idempotencyKey}\`, 'LOCKED', 'NX', 'EX', 120);
-    if (!isProcessed) {
-      throw new ConflictError('Doppelte Transaktionssignatur erkannt.');
-    }
-
-    // 2. Echtzeitbestand sperren & abbuchen
-    const inventory = await tx.inventory.decrementBatch(req.items);
-    
-    // 3. Zahlungsabwicklung via Stripe ausführen
-    const paymentIntent = await stripe.paymentIntents.create({
-      amount: req.totalAmountCents,
-      currency: 'eur',
-      customer: req.customerId,
-      metadata: { orderId: req.orderId }
-    });
-
-    // 4. Bestellung persistieren & Ereignis publizieren
-    const order = await tx.orders.create({ ...req, stripePaymentId: paymentIntent.id });
-    await eventBus.publish('order.created', { orderId: order.id });
-    return { status: 'success', orderId: order.id };
-  });
-}`,
-      },
-      {
-        id: "collaborative-workspace-hub",
-        title: "COLLABORATIVE WORKSPACE HUB",
-        subtitle: "Echtzeit-synchronisierte Canvas- & Präsenz-Architektur",
-        description:
-          "Kollaborative Produktivitätsplattform mit Live-Mehrbenutzer-Cursor, automatischer Zustandskonvergenz via CRDTs und Offline-First-Client-Synchronisation.",
-        longDescription:
-          "Entwicklung einer kollaborativen Fullstack-Suite für verteilte Teams zum simultanen Bearbeiten von Projekt-Boards, Flussdiagrammen und Notizen. Realisiert mit React/TypeScript im Frontend sowie Node.js WebSockets und Redis Pub/Sub Kanälen über mehrere Server-Knoten hinweg.",
-        architectureBreakdown: [
-          {
-            title: "Bi-direktionales WebSocket Gateway",
-            description:
-              "Skalierbarer Node.js / Socket.IO Cluster für über 50.000 persistente Socket-Verbindungen mit automatischer Heartbeat-Wiederherstellung.",
-          },
-          {
-            title: "CRDT Konfliktresolution",
-            description:
-              "Deterministische Peer-to-Peer Datenkonvergenz ohne Schreibkonflikte bei hochfrequenten parallelen Team-Edits.",
-          },
-          {
-            title: "Optimistischer Client-Cache",
-            description:
-              "Lokale IndexedDB-Cachingschicht für nahtlose Offline-Bearbeitung und sofortige visuelle Rückmeldung.",
-          },
-        ],
-        metrics: [
-          { label: "Sync-Latenz", value: "< 18ms", change: "Globale Peer-Verteilung" },
-          { label: "Gleichzeitige Nutzer", value: "50k+", change: "Pro verteiltem Cluster" },
-          { label: "Offline-Präzision", value: "100%", change: "Keine Zustandsverfälschung" },
-        ],
-        tags: ["REACT", "TYPESCRIPT", "WEBSOCKETS", "NODE.JS", "REDIS", "DOCKER"],
-        techStack: ["React", "TypeScript", "WebSockets", "Node.js", "Redis", "Docker"],
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuDsAJfXxr10uf32uJ385QmaYql-1gH4n6TAvO42Vnx4D13LCwAOVxXt6EWbwQjq5PXsZt0xJvgoXaiaACDOmggekPjs1MfTdAj92O8X5ceI-L5yB1SbexUCzDGeItCQ53lN3E77VlCbpB8bmnUPesAdFPkhckuTlltl0n4teIA1wstqn9ZS_ViSRykWNok5MIm0t3cvIo0ok6a2MhLPV8wcK3AqnJ6E1jbhSe5L2xISICkkXicR9fU",
-        imageAlt: "Monochrome Visualisierung vernetzter kollaborativer Datenströme.",
-        codeLanguage: "typescript",
-        codeSnippet: `// WebSocket Collaborative State Synchronization
-export class DocumentRoomManager {
-  private pubClient = getRedisClient();
-  private subClient = getRedisClient();
-
-  async handleUserEdit(roomId: string, userId: string, operation: CRDTOperation) {
-    // 1. Lokal an Raumnutzer verteilen
-    socketServer.to(roomId).except(userId).emit('op:receive', operation);
-
-    // 2. Knotenübergreifende Synchronisationsdeltas publizieren
-    await this.pubClient.publish(\`room:\${roomId}:sync\`, JSON.stringify({
-      author: userId,
-      payload: operation,
-      timestamp: Date.now()
-    }));
-  }
-}`,
-      },
-      {
-        id: "cloud-telemetry-api-gateway",
-        title: "CLOUD-TELEMETRIE & API-GATEWAY",
-        subtitle: "Python FastAPI Microservices & React Monitoring-Konsole",
-        description:
-          "Zentrales API-Gateway und Telemetrieportal zur Überwachung verteilter Microservices mit dynamischem Rate-Limiting, Token-Authentifizierung und Live-Metriken.",
-        longDescription:
-          "Architektur eines Cloud-nativen Gateways zur Konsolidierung von über 30 internen Microservices unter einer einheitlichen REST- und GraphQL-Schnittstelle. Mit automatischer API-Dokumentation, rollenbasierter JWT-Validierung und interaktivem React-Dashboard.",
-        architectureBreakdown: [
-          {
-            title: "Asynchrones Python FastAPI Gateway",
-            description:
-              "Hochdurchsatzfähiger async ASGI-Router mit nicht-blockierendem I/O und automatischer Schemavalidierung.",
-          },
-          {
-            title: "JWT Auth & RBAC Sicherheitsschicht",
-            description:
-              "Kryptografische Token-Verifikation mit Claim-Prüfung und automatisierter API-Schlüssel-Kontingentierung.",
-          },
-          {
-            title: "React Analytics Dashboard",
-            description:
-              "Interaktives Telemetrieportal mit Zeitreihen-Visualisierung via Recharts, Fehlerlog-Suche und Latenzalarmen.",
-          },
-        ],
-        metrics: [
-          { label: "Routing-Overhead", value: "1.4ms", change: "Keine Engpässe" },
-          { label: "Tägliche Anfragen", value: "12M+", change: "Autoskaliert auf AWS ECS" },
-          { label: "Sicherheitsüberprüfung", value: "100%", change: "Strikte Schema-Prüfung" },
-        ],
-        tags: ["PYTHON", "FASTAPI", "REACT", "GRAPHQL", "DOCKER", "AWS"],
-        techStack: ["Python", "FastAPI", "React", "GraphQL", "Docker", "AWS"],
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuAI_4N4B6DrUPEtPxjvRTLELMwb7Et7h3TlbSbv_FFkLzo6kk4oDQy5tJn-z2AB-jDHuJx7zgGa5x5BwFsZc97tKzLkudnKMkedBG7l0fl6N_jDtC0LfniNYGlnlGg6jHeZ0dKmmqhVZ9EwFf4Api-G0TkJqo9PE-3boWoNIvUTDDPnaAleeGLAuONNUiguquFaL1rrQw7-94wVHhb87BktXju2gQCHVxLx4Je7_QTRwQ4EcnUgmoc",
-        imageAlt: "Monochromes Rendering von Netzwerkknoten und Microservice-Topologien.",
-        codeLanguage: "typescript",
-        codeSnippet: `// Fast API Gateway Reverse Proxy & Rate Limiter Handler
-export async function authenticateAndProxy(
-  req: IncomingMessage,
-  res: ServerResponse,
-  targetServiceUrl: string
-): Promise<void> {
-  const token = req.headers['authorization']?.replace('Bearer ', '');
-  if (!token || !verifyJwtSignature(token)) {
-    res.writeHead(401, { 'Content-Type': 'application/json' });
-    return res.end(JSON.stringify({ error: 'Unautorisierter Gateway-Zugriff' }));
-  }
-
-  // Token Bucket Rate Limiter Prüfung (100 Anfr. / Min.)
-  const clientIp = req.socket.remoteAddress || 'unknown';
-  const allowed = await rateLimiter.consume(clientIp, 1);
-  if (!allowed) {
-    res.writeHead(429, { 'Content-Type': 'application/json' });
-    return res.end(JSON.stringify({ error: 'Zu viele Anfragen' }));
-  }
-
-  return proxyRequest(req, res, targetServiceUrl);
-}`,
-      },
-      {
-        id: "design-system-component-registry",
-        title: "DESIGN SYSTEM & KOMPONENTEN-REGISTRY",
-        subtitle: "Modulares TypeScript Monorepo & UI-Komponentenbibliothek",
-        description:
-          "Unternehmensweites Fullstack-Designsystem für über 25 Entwickler auf mehreren Webplattformen. Automatisierte Token-Pipelines, Storybook und CI/CD-Publishing.",
-        longDescription:
-          "Einheitliches Designsystem-Paket basierend auf Turborepo, TypeScript, Tailwind CSS und Storybook mit semantischer Versionierung und automatisierter Barrierefreiheitsprüfung (WCAG 2.1 AA).",
-        architectureBreakdown: [
-          {
-            title: "Design-Token Compiler",
-            description:
-              "Konvertiert Figma-Designvariablen in strikte CSS Custom Properties und typisierte TypeScript-Themes.",
-          },
-          {
-            title: "Barrierefreie Headless-Komponenten",
-            description:
-              "Tastaturnavigierbare, Screenreader-geprüfte UI-Komponenten auf Basis von Radix-Primitiven und Tailwind CSS.",
-          },
-          {
-            title: "Monorepo & CI/CD-Automatisierung",
-            description:
-              "Turborepo-Workspace mit Linting, visuellen Regressionstests und automatischer Changelog-Erstellung.",
-          },
-        ],
-        metrics: [
-          { label: "Entwickler-Adoption", value: "100%", change: "25+ Entwickler aktiv" },
-          { label: "Barrierefreiheit", value: "100/100", change: "Vollständige WCAG AA Konformität" },
-          { label: "Bundle-Größe", value: "0.9 KB Ø", change: "Vollständig Tree-shakeable" },
-        ],
-        tags: ["TYPESCRIPT", "REACT", "TAILWIND CSS", "STORYBOOK", "TURBOREPO"],
-        techStack: ["TypeScript", "React", "Tailwind CSS", "Storybook", "Turborepo"],
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuC7sx7jWkSG38vsTPQB0p1h0MPMAHD_fVJKdQhmHF_-weJkWtVg7F10iXvsN3JFHvBkRwmhA7qjrzNJJS8XUcuyL9IPYf7Z55PWO1TqbV5qRvIXaq95Z2SLKcdNVOsJyCjtJlOmFLm-TiPg5tPQd6l3GPylKG23jkM2-spBy1WsKe0sAjPV7m-2jOQnFHliZA823PgrNhbcnGYQyQ0sSBBtFFGF2-UNvknN6_ny1npY9JjMLHOC0No",
-        imageAlt: "Monochromes technisches Raster mit modularen UI-Komponenten.",
-        codeLanguage: "typescript",
-        codeSnippet: `// Polymorphic Component Factory with Strict Type Enforcement
-export type PolymorphicProps<E extends React.ElementType, P = {}> = P &
-  Omit<React.ComponentPropsWithoutRef<E>, keyof P> & {
-    as?: E;
-  };
-
-export const Button = React.forwardRef(
-  <E extends React.ElementType = 'button'>(
-    { as, className, variant = 'primary', ...props }: PolymorphicProps<E, ButtonProps>,
-    ref: React.Ref<Element>
-  ) => {
-    const Component = as || 'button';
-    const styles = getButtonVariantStyles(variant);
-    return <Component ref={ref} className={cn(styles, className)} {...props} />;
-  }
-);`,
-      },
-      {
         id: "wedly-wedding-marketplace",
         title: "WEDLY WEDDING-MARKETPLACE",
         subtitle: "Kuratierter Hochzeits-Commerce, KI-Entdeckung & redaktionelle Inspiration",
@@ -994,67 +762,67 @@ export const marketplaceModes = {
 } as const;`,
         demoUrl: "https://www.oringo.app/",
       },
-      {
-        id: "slipsense-betslip-analysis",
-        title: "SLIPSENSE WETTSCHEIN-ANALYSE",
-        subtitle: "Sportwetten-Analyse, Wahrscheinlichkeiten & bessere Optionen",
-        description:
-          "Ein Analyse-Tool, das Wettschein-Codes in verständlichen Kontext pro Tipp, Risikosignale und bessere Spieloptionen übersetzt.",
-        longDescription:
-          "SlipSense verarbeitet Buchungscodes von SportyBet, Afropari, MelBet und 1xBet und zerlegt jede Auswahl in Gewinnwahrscheinlichkeit, aktuelle Form, direkte Duelle und Risiko. Die Anwendung hebt das schwächste Bein hervor und schlägt bessere Optionen vor, wobei die Schätzungen ausdrücklich informativ und keine garantierte Wettberatung sind.",
-        architectureBreakdown: [
-          {
-            title: "Buchungscode-Eingabe",
-            description:
-              "Nutzer fügen einen Buchungs- oder Teilen-Code eines unterstützten Wettanbieters ein, ohne Screenshots hochzuladen oder Tipps abzutippen.",
-          },
-          {
-            title: "Analyse pro Tipp",
-            description:
-              "Jede Begegnung erhält Kontext zu Wahrscheinlichkeit, aktueller Form, direkten Duellen, BTTS und Over 2.5.",
-          },
-          {
-            title: "Risiko- und Neuaufbau-Hinweise",
-            description:
-              "Die Übersicht markiert schwächere Tipps und kann alternative Märkte mit geschätzten Quoten vorschlagen.",
-          },
-        ],
-        metrics: [
-          {
-            label: "Unterstützte Eingaben",
-            value: "4 Wettanbieter",
-            change: "SportyBet, Afropari, MelBet, 1xBet",
-          },
-          {
-            label: "Analyseansicht",
-            value: "Kontext pro Tipp",
-            change: "Wahrscheinlichkeit, Form und H2H",
-          },
-          {
-            label: "Nutzungsmodell",
-            value: "Token-basiert",
-            change: "Kostenloses Kontingent zum Start",
-          },
-        ],
-        tags: [
-          "WETTSCHEIN-ANALYSE",
-          "SPORTDATEN",
-          "WAHRSCHEINLICHKEIT",
-          "FORM & H2H",
-          "VERANTWORTUNGSVOLLES DESIGN",
-        ],
-        techStack: ["Next.js", "React", "Tailwind CSS", "Claude", "Render"],
-        image: slipsenseImage,
-        imageAlt: "Fußballszene als visuelle Darstellung einer Sportwetten-Analyse.",
-        codeLanguage: "typescript",
-        codeSnippet: `// SlipSense Analyse-Zusammenfassung
-export const slipAnalysis = {
-  inputs: ["SportyBet", "Afropari", "MelBet", "1xBet"],
-  signals: ["Gewinnwahrscheinlichkeit", "Aktuelle Form", "Direkte Duelle"],
-  output: ["Wettschein-Score", "Schwächster Tipp", "Bessere Option"],
-} as const;`,
-        demoUrl: "https://slipsense-frontend.onrender.com/",
-      },
+      //       {
+      //         id: "slipsense-betslip-analysis",
+      //         title: "SLIPSENSE WETTSCHEIN-ANALYSE",
+      //         subtitle: "Sportwetten-Analyse, Wahrscheinlichkeiten & bessere Optionen",
+      //         description:
+      //           "Ein Analyse-Tool, das Wettschein-Codes in verständlichen Kontext pro Tipp, Risikosignale und bessere Spieloptionen übersetzt.",
+      //         longDescription:
+      //           "SlipSense verarbeitet Buchungscodes von SportyBet, Afropari, MelBet und 1xBet und zerlegt jede Auswahl in Gewinnwahrscheinlichkeit, aktuelle Form, direkte Duelle und Risiko. Die Anwendung hebt das schwächste Bein hervor und schlägt bessere Optionen vor, wobei die Schätzungen ausdrücklich informativ und keine garantierte Wettberatung sind.",
+      //         architectureBreakdown: [
+      //           {
+      //             title: "Buchungscode-Eingabe",
+      //             description:
+      //               "Nutzer fügen einen Buchungs- oder Teilen-Code eines unterstützten Wettanbieters ein, ohne Screenshots hochzuladen oder Tipps abzutippen.",
+      //           },
+      //           {
+      //             title: "Analyse pro Tipp",
+      //             description:
+      //               "Jede Begegnung erhält Kontext zu Wahrscheinlichkeit, aktueller Form, direkten Duellen, BTTS und Over 2.5.",
+      //           },
+      //           {
+      //             title: "Risiko- und Neuaufbau-Hinweise",
+      //             description:
+      //               "Die Übersicht markiert schwächere Tipps und kann alternative Märkte mit geschätzten Quoten vorschlagen.",
+      //           },
+      //         ],
+      //         metrics: [
+      //           {
+      //             label: "Unterstützte Eingaben",
+      //             value: "4 Wettanbieter",
+      //             change: "SportyBet, Afropari, MelBet, 1xBet",
+      //           },
+      //           {
+      //             label: "Analyseansicht",
+      //             value: "Kontext pro Tipp",
+      //             change: "Wahrscheinlichkeit, Form und H2H",
+      //           },
+      //           {
+      //             label: "Nutzungsmodell",
+      //             value: "Token-basiert",
+      //             change: "Kostenloses Kontingent zum Start",
+      //           },
+      //         ],
+      //         tags: [
+      //           "WETTSCHEIN-ANALYSE",
+      //           "SPORTDATEN",
+      //           "WAHRSCHEINLICHKEIT",
+      //           "FORM & H2H",
+      //           "VERANTWORTUNGSVOLLES DESIGN",
+      //         ],
+      //         techStack: ["Next.js", "React", "Tailwind CSS", "Claude", "Render"],
+      //         image: slipsenseImage,
+      //         imageAlt: "Fußballszene als visuelle Darstellung einer Sportwetten-Analyse.",
+      //         codeLanguage: "typescript",
+      //         codeSnippet: `// SlipSense Analyse-Zusammenfassung
+      // export const slipAnalysis = {
+      //   inputs: ["SportyBet", "Afropari", "MelBet", "1xBet"],
+      //   signals: ["Gewinnwahrscheinlichkeit", "Aktuelle Form", "Direkte Duelle"],
+      //   output: ["Wettschein-Score", "Schwächster Tipp", "Bessere Option"],
+      // } as const;`,
+      //         demoUrl: "https://slipsense-frontend.onrender.com/",
+      //       },
     ],
     experiences: [
       {
@@ -1213,7 +981,7 @@ export const slipAnalysis = {
     ],
     ui: {
       nav: {
-        studio: "Studio",
+        studio: "Home",
         projects: "Projekte",
         about: "Über mich",
         skills: "Kompetenzen",
